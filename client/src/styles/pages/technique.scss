@@ -27,33 +27,6 @@
     p {
       color: var(--gris);
     }
-    p.environnement {
-     text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: -200px;
-    }
-
-    p.achat {
-     text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: 270px;
-    }
-
-    p.commerciale {
-     text-transform: uppercase;
-      position: absolute;
-      top: -40%;
-      left: 25%;
-    }
-
-    p.ressources {
-     text-transform: uppercase;
-      position: absolute;
-      bottom: -31%;
-      left: 14%;
-    }
 
   }
 
@@ -90,15 +63,28 @@
     height: 200px;
     background: #F8F8F8;
     position: relative;
-    .arrow_top::before {
-      content: ">>";
+    .arrow_top {
       position: absolute;
-      top: -126px;
-      left: 33%;
-      transform: rotate(268deg);
-      font-weight: bold;
-      font-size: 42px;
-      color: #E5AF2F;
+      top: -40%;
+      left: 40%;
+      text-decoration-line: none;
+      color: $color_blue_1;
+      transition: all .6s;
+      &:hover {
+        transition: all .6s;
+        color: $color_blue_5;
+      }
+
+      
+      .icon {
+        transform: rotate(-90deg);
+        font-weight: 100;
+        font-size: 42px;
+        color: $color_orange_3;
+      }
+      a {
+        text-decoration-line: none;
+      }
     }
 
 
@@ -115,15 +101,28 @@
     height: 200px;
     background: #F8F8F8;
     position: relative;
-    .arrow_left::before {
-      content: ">>";
+    .arrow_left {
       position: absolute;
       bottom: 38px;
-      left: -125%;
-      transform: rotate(179deg);
-      font-weight: bold;
-      font-size: 42px;
-      color: #E5AF2F;
+      left: -50%;
+      text-decoration-line: none;
+      color: $color_blue_1;
+      transition: all .6s;
+      &:hover {
+        transition: all .6s;
+        color: $color_blue_5;
+      }
+
+      
+      .icon {
+        transform: rotate(180deg);
+        font-weight: 100;
+        font-size: 42px;
+        color: $color_orange_3;
+      }
+      a {
+        text-decoration-line: none;
+      }
     }
   }
 
@@ -143,15 +142,26 @@
     height: 200px;
     background: #F8F8F8;
     position: relative;
-    .arrow_right::before {
-      content: ">>";
+    .arrow_right {
       position: absolute;
       bottom: 46px;
-      right: -107%;
-      transform: rotate(359deg);
-      font-weight: bold;
-      font-size: 42px;
-      color: #E5AF2F;
+      right: -40%;
+      text-decoration-line: none;
+      color: $color_blue_1;
+      transition: all .6s;
+      &:hover {
+        transition: all .6s;
+        color: $color_blue_5;
+      }
+      
+      .icon {
+        font-weight: 100;
+        font-size: 42px;
+        color: $color_orange_3;
+      }
+      a {
+        text-decoration-line: none;
+      }
     }
 
   }
@@ -167,15 +177,31 @@
     height: 200px;
     background: #F8F8F8;
     position: relative;
-    .arrow_down::before {
-      content: ">>";
+    .arrow_down {
       position: absolute;
-      bottom: -120px;
-      left: 40%;
-      transform: rotate(89deg);
-      font-weight: bold;
-      font-size: 42px;
-      color: #E5AF2F;
+      bottom: -40%;
+      left: 20%;
+      text-decoration-line: none;
+      color: $color_blue_1;
+      transition: all .6s;
+      &:hover {
+        transition: all .6s;
+        color: $color_blue_5;
+      }
+  
+      .ressources {
+        margin-top: -20px;
+      }
+      
+      .icon {
+        transform: rotate(90deg);
+        font-weight: 100;
+        font-size: 42px;
+        color: $color_orange_3;
+      }
+      a {
+        text-decoration-line: none;
+      }
     }
 
   }
