@@ -39,8 +39,8 @@ const Achat = () => {
                         </a>
                     </div>
                     <div className="cude_2d_5">
-                        <h2>Date : </h2>
-                        <input type="date" id="start" name="trip-start" />
+                        <h2>Trier : </h2>
+                        <input type="month" id="start" name="trip-start" />
                     </div>
                     <div className="cude_2d_6">
                         <h2>Statistique 3</h2>
