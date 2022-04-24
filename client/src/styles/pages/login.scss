@@ -190,6 +190,27 @@
  }
 }
 
+footer {
+ z-index: 999;
+ position: fixed;
+ bottom: 5%;
+ left: 5%;
+ color: #A8A8A8;
+ font-weight: 200;
+ text-transform: uppercase;
+
+ a {
+  color: #A8A8A8;
+  text-decoration-line: none;
+  transition: all .6s;
+
+  &:hover {
+   transition: all .6s;
+   color: #595858
+  }
+ }
+}
+
 @media screen and (max-width: 1140px) {
  .wrap {
 
