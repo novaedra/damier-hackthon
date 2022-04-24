@@ -27,35 +27,54 @@
         }
     }
 
+    .IconRight{
+        width: 8%;
+    }
+
     .right {
         background-color: white;
-        width: 85%;
-        height: 100vh;
+        width: 80%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items: stretch;
+        justify-content: center;
         flex-wrap: wrap;
-        padding: 0  4rem;
         .card{
-            width: 28.333%;
+            width: 29.333%;
+            margin: 2%;
             text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: top;
-            padding: 1rem;
             height: 250px;
             transition: .5s;
             border-radius: .3rem;
             cursor: pointer;
             &:hover {
                 transform: scale(1.1);
-                // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
+            }
+            .material-icons{
+                margin-right: 0;
+                font-size: 100px;
             }
             img{
                 width: 20%;
+            }
+            p{
+                font-size: 12px;
+                color: #A8A8A8;
+                text-align: center;
+                font: normal normal normal 9px/10px Arial;
+                letter-spacing: 0px;
+                text-shadow: 0px 3px 6px #00000029;
+                text-transform: uppercase;
+                width: 80%;
+            }
+            h2{
+                text-align: left;
+                font: normal normal bold 22px/26px Arial;
+                letter-spacing: 0px;
+                text-transform: uppercase;
             }
         }
         .activeCard {
@@ -64,8 +83,7 @@
         }
         .yellow {
             background-color: #e5ae2f30;
-            padding: 1rem;
-            color: gray;
+            color: #FEDC63;
             h2{
                 color: #E5AF2F;
             }
@@ -75,14 +93,12 @@
         }
         .green {
             background-color: #AEDCB7;
-            padding: 1rem;
             color: #76A27F;
             font-family: 'Montserrat', sans-serif;
         }
         .purple {
             background-color:#dab6c238;
-            padding: 1rem;
-            color: gray; 
+            color: #DAB6C2; 
             h2 {
                 color: #6A3A4F;
                 span {
@@ -92,7 +108,6 @@
         }
         .orange {
             background-color:#ff95001c;
-            padding: 1rem;
             color: gray;
             img {
                 width: 32%;
@@ -106,8 +121,8 @@
         }
         .blue {
             background-color: #3a56a32a;
-            padding: 1rem;
-            color:   #3A56A3!important; 
+            color: #3A56A3; 
+            ; 
             img{
                 width: 35%;
             }
@@ -115,8 +130,7 @@
         }
         .greenLight {
             background-color: #D4E496;
-            padding: 1rem;
-            color:   #707070; 
+            color: #347760;
             img{
                 width: 35%;
             }
@@ -164,35 +178,35 @@
 }
 
 
-@media screen and (max-width: 1000px){
-    .wrap .right .card {
-    width: 43%;
-    margin-bottom: 2rem;
-    }
-    .wrap .right {
-       overflow: auto;
-    }
-}
-@media screen and (max-width: 800px){
-    .wrap .right {
-        padding: 0 1rem;
-    }
-    .wrap .right .card {
-        width: 99%;
-        margin-bottom: 2rem;
-        height: 40%;
-        }    
+// @media screen and (max-width: 1000px){
+//     .wrap .right .card {
+//     width: 43%;
+//     margin-bottom: 2rem;
+//     }
+//     .wrap .right {
+//        overflow: auto;
+//     }
+// }
+// @media screen and (max-width: 800px){
+//     .wrap .right {
+//         padding: 0 1rem;
+//     }
+//     .wrap .right .card {
+//         width: 99%;
+//         margin-bottom: 2rem;
+//         height: 40%;
+//         }    
        
-   #main {
-    padding: 16px;
-    margin-left: 40px;
-    transition: margin-left 0.5s;
-   }
-}
+//    #main {
+//     padding: 16px;
+//     margin-left: 40px;
+//     transition: margin-left 0.5s;
+//    }
+// }
 
-@media screen and (max-width: 450px){
-    .openSide {
-        width: 100%!important;
-    }
-}
+// @media screen and (max-width: 450px){
+//     .openSide {
+//         width: 100%!important;
+//     }
+// }
 

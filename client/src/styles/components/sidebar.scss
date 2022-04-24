@@ -8,28 +8,48 @@
   background-color: #fff;
   transition: 0.5s;
   overflow-x: hidden;
-  padding-top: 60px;
   white-space: nowrap;
   -webkit-box-shadow: 20px 10px 13px -14px rgba(10,10,10,0.05); 
   box-shadow: 20px 10px 13px -14px rgba(10,10,10,0.05);
 
   &.opened {
-    width: 250px;
+    width: 300px;
   }
-
+  .SDR{
+    position: relative;
+    left: 85px;
+  }
   a {
-    padding: 8px 8px 8px 32px;
+    padding: 22px 8px 8px 22px;
     text-decoration: none;
     font-size: 1.3rem;
     color: #818181;
     display: block;
     transition: all .6s;
+    font: normal normal bold 15px/18px Roboto;
 
     &:hover {
       color: #333;
       transition: all .6s;
       background-color: rgba(255, 255, 255, 0.204);
     }
+  }
+  .Hello{
+    font: normal normal 800 20px/24px Montserrat;
+  }
+  .Logout{
+    font: normal normal bold 12px/15px Montserrat;
+    text-transform: uppercase;
+  }
+  .gradient{
+    position: absolute;
+    background: transparent linear-gradient(180deg, #628D9B2F 0%, #F2F6F727 100%) 0% 0% no-repeat padding-box;
+    width: 215px;
+    height: 40vh;
+    left: 85px;
+  }
+  .p-10{
+    padding: 20px;
   }
 }
 

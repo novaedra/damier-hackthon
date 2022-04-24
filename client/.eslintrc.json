@@ -26,7 +26,7 @@
     "react/jsx-props-no-spreading" : [0],
     "react/jsx-indent-props"       : [1, 1],
     "semi"                         : [1, "always"],
-    "quotes"                       : ["warning", "double"],
+    "quotes"                       : [1, "double"],
     "no-console"                   : 0,
     "no-control-regex"             : 0,
     "prettier/prettier"            : ["warning", { "endOfLine": "auto" }]
