@@ -6,7 +6,9 @@ import '../../styles/pages/login.scss'
 
 const LoginPage = () => {
 
+
  const togglePwdType = () => {
+
   if (document.getElementById('password_input').attributes[1].value == "password") {
    document.getElementById('password_input').attributes[1].value = "text"
   } else if (document.getElementById('password_input').attributes[1].value == "text") {
@@ -28,7 +30,7 @@ const LoginPage = () => {
 
       <div className='password_section'>
        <input id='password_input' type="password" placeholder='Mot de passe' />
-       <span className='icon_pwd'><FontAwesomeIcon icon={faEye} className="eye_pwd" onClick={togglePwdType} /></span>
+       <span id='icon_pwd' className='icon_pwd'><FontAwesomeIcon icon={faEye} className="eye_pwd" onClick={togglePwdType} /></span>
       </div>
 
      </form>
@@ -41,7 +43,7 @@ const LoginPage = () => {
         <span className="checkmark"></span>
        </label>
       </div>
-      <input type="submit" value={'Se Connecter'} />
+      <input type="submit" value={'Se Connecter'} onClick={() => {document.location.href = '/'}} />
      </div>
     </div>
     <div className='right'>
