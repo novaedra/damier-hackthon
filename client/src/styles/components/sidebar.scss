@@ -1,0 +1,53 @@
+.sidebar {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+  white-space: nowrap;
+  -webkit-box-shadow: 20px 10px 13px -14px rgba(10,10,10,0.05); 
+  box-shadow: 20px 10px 13px -14px rgba(10,10,10,0.05);
+
+  &.opened {
+    width: 250px;
+  }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #818181;
+    display: block;
+    transition: all .6s;
+
+    &:hover {
+      color: #333;
+      transition: all .6s;
+      background-color: rgba(255, 255, 255, 0.204);
+    }
+  }
+}
+
+.material-icons,
+.icon-text {
+ vertical-align: middle;
+}
+
+.material-icons {
+ padding-bottom: 3px;
+ margin-right: 2rem;
+}
+
+@media screen and (max-height: 450px) {
+ .sidebar {
+   padding-top: 15px;
+ }
+ .sidebar a {
+   font-size: 18px;
+ }
+}

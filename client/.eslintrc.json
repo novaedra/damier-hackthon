@@ -24,9 +24,9 @@
   "rules": {
     "react/jsx-filename-extension" : [1, { "extensions": [".jsx", ".js"] }],
     "react/jsx-props-no-spreading" : [0],
-    "react/jsx-indent-props"       : ["warning", 1],
-    "semi"                         : ["error", "always"],
-    "quotes"                       : ["error", "double"],
+    "react/jsx-indent-props"       : [1, 1],
+    "semi"                         : [1, "always"],
+    "quotes"                       : ["warning", "double"],
     "no-console"                   : 0,
     "no-control-regex"             : 0,
     "prettier/prettier"            : ["warning", { "endOfLine": "auto" }]

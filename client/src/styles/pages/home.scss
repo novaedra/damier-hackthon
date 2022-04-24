@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');   
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');   
 .wrap {
     height: 100vh;
     margin: 0 auto;
@@ -5,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+ 
     .left{
         background-color: red;
         position: relative;
@@ -23,10 +26,104 @@
         }
         }
     }
+
     .right {
-    background-color: white;
-        width: 92%;
+        background-color: white;
+        width: 85%;
         height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0  4rem;
+        .card{
+            width: 28.333%;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            padding: 1rem;
+            height: 250px;
+            transition: .5s;
+            border-radius: .3rem;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+                // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+            }
+            img{
+                width: 20%;
+            }
+        }
+        .activeCard {
+            transform: scale(1.1);
+            z-index: 300;
+        }
+        .yellow {
+            background-color: #e5ae2f30;
+            padding: 1rem;
+            color: gray;
+            h2{
+                color: #E5AF2F;
+            }
+            span {
+                color: #E5AF2F;
+            }
+        }
+        .green {
+            background-color: #AEDCB7;
+            padding: 1rem;
+            color: #76A27F;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .purple {
+            background-color:#dab6c238;
+            padding: 1rem;
+            color: gray; 
+            h2 {
+                color: #6A3A4F;
+                span {
+                    color: #6A3A4F;
+                }
+            }
+        }
+        .orange {
+            background-color:#ff95001c;
+            padding: 1rem;
+            color: gray;
+            img {
+                width: 32%;
+            }
+            span {
+                color:  #FF9300; 
+            }
+            h2 {
+                color:  #FF9300;   
+            }
+        }
+        .blue {
+            background-color: #3a56a32a;
+            padding: 1rem;
+            color:   #3A56A3!important; 
+            img{
+                width: 35%;
+            }
+           
+        }
+        .greenLight {
+            background-color: #D4E496;
+            padding: 1rem;
+            color:   #707070; 
+            img{
+                width: 35%;
+            }
+            h2 {
+                color:   #7BBC88; 
+            }
+        }
     }
     .scrollBar {
         background-color: green;    
@@ -49,13 +146,53 @@
         transition: all 0.6s ease;
     }
 }
+.vert {
+    color: #D4E496!important;
+}
 
 .orange {
-    color: orange;
+    color: orange!important;
 }
 .rose {
-    color: pink;
+    color: #dab6c2!important;
 }
 .bleu {
-    color: blue;
+    color: #3A56A3!important;
 }
+.jaune {
+    color: #e5ae2f!important;
+}
+
+
+@media screen and (max-width: 1000px){
+    .wrap .right .card {
+    width: 43%;
+    margin-bottom: 2rem;
+    }
+    .wrap .right {
+       overflow: auto;
+    }
+}
+@media screen and (max-width: 800px){
+    .wrap .right {
+        padding: 0 1rem;
+    }
+    .wrap .right .card {
+        width: 99%;
+        margin-bottom: 2rem;
+        height: 40%;
+        }    
+       
+   #main {
+    padding: 16px;
+    margin-left: 40px;
+    transition: margin-left 0.5s;
+   }
+}
+
+@media screen and (max-width: 450px){
+    .openSide {
+        width: 100%!important;
+    }
+}
+
