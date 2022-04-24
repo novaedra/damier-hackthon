@@ -254,15 +254,25 @@
   }
   @media (max-width: 800px) {
   
-    .cude_2d_1, .cude_2d_3 , .cude_2d_5, .cude_2d_7, .cude_2d_9 {
+    .cude_2d_1, .cude_2d_3 , .cude_2d_7, .cude_2d_9 {
       display: none;
     }
-    .technique, .exploitation, .commerciale, .ressources, .arrow_down::before, .arrow_left::before, .arrow_right::before, .arrow_top::before {
+    .cude_2d_2, .cude_2d_4, .cude_2d_6, .cude_2d_8, .cude_2d_9 {
+      order: 2;
+    }
+    .cude_2d_5 {
+      order: 1;
+    }
+    .arrow_left, .arrow_top, .arrow_right, .arrow_down {
       display: none;
     }
     .wrap_single {
       flex-direction: column;
       align-items: center;
+    }
+
+    .wrap_single > div {
+      margin-left: 50px;
     }
   
   
