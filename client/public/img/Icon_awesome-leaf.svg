@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.5" height="45.705" viewBox="0 0 52.5 45.705">
+  <defs>
+    <filter id="Icon_awesome-leaf" x="0" y="0" width="52.5" height="45.705" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-leaf)">
+    <path id="Icon_awesome-leaf-2" data-name="Icon awesome-leaf" d="M32.715.526a.976.976,0,0,0-1.7-.065A10.5,10.5,0,0,1,22.04,5.2H17.248c-6.35,0-11.5,4.653-11.5,10.388a9.681,9.681,0,0,0,.09,1.109C9.659,14.22,15.176,12.121,23,12.121a.87.87,0,1,1,0,1.731C7.94,13.852,1.554,22.189.14,25.322a1.678,1.678,0,0,0,1.048,2.251,2,2,0,0,0,2.5-.936A14.456,14.456,0,0,1,8,21.735a11.991,11.991,0,0,0,10.477,4.177c9.4-.617,16.024-8.235,16.024-17.562A18.057,18.057,0,0,0,32.715.526Z" transform="translate(9 6)" fill="#0c5b53" opacity="0.634"/>
+  </g>
+</svg>
