@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/pages/commerciale.scss";
 import Sidebar from "../../components/Sidebar";
 import commercialAPI from "../../services/commercialAPI";
@@ -27,7 +25,6 @@ const Commerciale = () => {
               <div className="arrow_top"></div>
               <p className="commerciale">Commerciale</p>
               <h2>Nombre réclamations</h2>
-              <FontAwesomeIcon icon={faUser} className="icon" />
               <p className="number">{commercialeData.nbReclamations}</p>
               <button className="btn-voir">en voir plus...</button>
             </div>
@@ -36,7 +33,6 @@ const Commerciale = () => {
               <div className="arrow_left"></div>
               <p className="technique">Technique</p>
               <h2>Nombre de nouveaux abonnements</h2>
-              <FontAwesomeIcon icon={faUser} className="icon" />
               <div className="text_damier">
                 <p>{commercialeData.nbNouveauxAbonnements}</p>
                 <button className="btn-voir">en voir plus...</button>
@@ -50,7 +46,6 @@ const Commerciale = () => {
               <div className="arrow_right"></div>
               <p className="exploitation">Exploitation</p>
               <h2>Nombre de nouveaux partenaires</h2>
-              <FontAwesomeIcon icon={faUser} className="icon" />
               <p>{commercialeData.nbNouveauxAbonnements}</p>
               <button className="btn-voir">en voir plus...</button>
             </div>
@@ -59,7 +54,6 @@ const Commerciale = () => {
               <div className="arrow_down"></div>
               <p className="ressources">Ressources humaines</p>
               <h2>Recette globale</h2>
-              <FontAwesomeIcon icon={faUser} className="icon" />
               <p>{commercialeData.recetteGlobale} €</p>
               <button className="btn-voir">en voir plus...</button>
             </div>

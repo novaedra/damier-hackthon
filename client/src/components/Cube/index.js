@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import * as annyang from "annyang";
-import speechSynthesis from "speech-synthesis";
-import { ReactComponent as Euro } from "../Icon/Icon_euro.svg";
-import { ReactComponent as Stats } from "../Icon/Icon_ionic-ios-stats.svg";
-import { ReactComponent as User } from "../Icon/Icon_awesome-user-alt.svg";
-import { ReactComponent as Meca } from "../Icon/Icon_awesome-cogs.svg";
-import { ReactComponent as Ticket } from "../Icon/Icon_awesome-ticket-alt.svg";
-import { ReactComponent as Feuille } from "../Icon/Icon_awesome-leaf.svg";
+// import speechSynthesis from "speech-synthesis";
 
 import "../../styles/components/sidebar.scss";
 import "../../css/cube.css";
@@ -66,10 +59,8 @@ const Cube = () => {
     }
     setTimeout(details, 2000);
   }
-  if (annyang) {
     // Let's define a command.
-    annyang.setLanguage("fr");
-    var commands = {
+   /* var commands = {
       "montre achat": function () {
         const cube = document.getElementById("cube");
         cube.className = "";
@@ -112,14 +103,12 @@ const Cube = () => {
         fade();
         speechSynthesis("Voici le service environnement", "fr-FR");
       },
-    };
+    };*/
 
     // Add our commands to annyang
-    annyang.addCommands(commands);
 
     // Start listening.
-    annyang.start();
-  }
+
   function cubeFace(target) {
     fade();
     const face = target.target.getAttribute("data-face");
@@ -159,7 +148,6 @@ const Cube = () => {
         <section className="container">
           <div id="cube">
             <figure className="front title">
-              <Euro />
               <h1>Achat</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :
@@ -194,7 +182,6 @@ const Cube = () => {
               <div className="cart cube9"></div>
             </figure>
             <figure className="back title">
-              <Stats />
               <h1>Commercial</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :
@@ -229,7 +216,6 @@ const Cube = () => {
               <div className="cart cube14"></div>
             </figure>
             <figure className="right title">
-              <User />
               <h1>R H</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :
@@ -264,7 +250,6 @@ const Cube = () => {
               <div className="cart cube19"></div>
             </figure>
             <figure className="left title">
-              <Meca />
               <h1>Meca</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :
@@ -299,7 +284,6 @@ const Cube = () => {
               <div className="cart cube24"></div>
             </figure>
             <figure className="top title">
-              <Ticket />
               <h1>Exploitation</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :
@@ -334,7 +318,6 @@ const Cube = () => {
               <div className="cart cube29"></div>
             </figure>
             <figure className="bottom title">
-              <Feuille />
               <h1>Environement</h1>
               <p>
                 Estimation de la variation des recettes par comparaison à 2020 :

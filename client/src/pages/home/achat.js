@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEuro } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/pages/achat.scss";
 import Sidebar from "../../components/Sidebar";
 import achatAPI from "../../services/achatAPI";
@@ -27,7 +25,6 @@ const Achat = () => {
               <div className="arrow_top"></div>
               <p className="commerciale">Achat</p>
               <h2>Nombre total de tickets vendus</h2>
-              <FontAwesomeIcon icon={faEuro} className="icon" />
               <p>{achatData.nbTotal}</p>
 
               <button className="btn-voir">en voir plus...</button>
@@ -37,7 +34,6 @@ const Achat = () => {
               <div className="arrow_left"></div>
               <p className="technique">Technique</p>
               <h2>Nombre de tickets papier vendus</h2>
-              <FontAwesomeIcon icon={faEuro} className="icon" />
               <div className="text_damier">
                 <p>{achatData.nbTicketsVendus}</p>
                 <button className="btn-voir">en voir plus...</button>
@@ -51,7 +47,6 @@ const Achat = () => {
               <div className="arrow_right"></div>
               <p className="exploitation">Exploitation</p>
               <h2>Nombre de tickets SMS vendus</h2>
-              <FontAwesomeIcon icon={faEuro} className="icon" />
               <p className="number">{achatData.nbTicketsSMS}</p>
               <button className="btn-voir">en voir plus...</button>
             </div>
@@ -60,7 +55,6 @@ const Achat = () => {
               <div className="arrow_down"></div>
               <p className="ressources">Ressources humaines</p>
               <h2>Format le plus populaire</h2>
-              <FontAwesomeIcon icon={faEuro} className="icon" />
               <p>{achatData.ventePopulaire}</p>
               <button className="btn-voir">en voir plus...</button>
             </div>
